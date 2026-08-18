@@ -171,6 +171,15 @@
   .absolute {
     position: absolute;
   }
+  .relative {
+    position: relative;
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-10 {
+    z-index: 10;
+  }
   .block {
     display: block;
   }
@@ -180,14 +189,23 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-full {
     height: 100%;
   }
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .items-center {
     align-items: center;
@@ -201,6 +219,21 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-solid {
+    --tw-border-style: solid;
+    border-style: solid;
+  }
+  .border-white {
+    border-color: var(--color-white);
+  }
   .bg-primary-dark {
     background-color: var(--color-primary-dark);
   }
@@ -210,8 +243,17 @@
   .object-center {
     object-position: center;
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-3\.75 {
+    padding-block: calc(var(--spacing) * 3.75);
   }
   .py-\[18\.5px\] {
     padding-block: 18.5px;
@@ -233,8 +275,18 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[\#FFB77B\] {
+    color: #FFB77B;
+  }
   .text-white {
     color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   @media (width >= 48rem) {
     .md\:block {
@@ -338,6 +390,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -345,6 +402,11 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-tracking {
   syntax: "*";
@@ -358,8 +420,10 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+      --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
       --tw-tracking: initial;
     }
   }
