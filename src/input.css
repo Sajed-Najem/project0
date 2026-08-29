@@ -35,15 +35,16 @@
         font-family: var(--font-PlayfairDisplay);
         font-size: 32px;
         font-weight: 600;
-        line-height: 1.2;
+        line-height:38.4px;
     }
 
     .headline-md {
-        font-family: var(--font-PlayfairDisplay);
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 1.3;
+        font-family: var(--font-montserrat);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
     }
+
 
      button {
     cursor: pointer;
