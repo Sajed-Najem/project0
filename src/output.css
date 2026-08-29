@@ -10,6 +10,8 @@
       "Courier New", monospace;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -192,6 +194,9 @@
   .mt-3\.75 {
     margin-top: calc(var(--spacing) * 3.75);
   }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
+  }
   .mt-36 {
     margin-top: calc(var(--spacing) * 36);
   }
@@ -282,11 +287,17 @@
   .bg-primary-dark {
     background-color: var(--color-primary-dark);
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .object-cover {
     object-fit: cover;
   }
   .object-center {
     object-position: center;
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -299,6 +310,9 @@
   }
   .py-3\.75 {
     padding-block: calc(var(--spacing) * 3.75);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .py-\[18\.5px\] {
     padding-block: 18.5px;
@@ -320,6 +334,10 @@
   }
   .font-montserrat {
     font-family: var(--font-montserrat);
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-\[12px\] {
     font-size: 12px;
@@ -345,6 +363,9 @@
   }
   .text-\[\#FFDCC6\] {
     color: #FFDCC6;
+  }
+  .text-primary-dark {
+    color: var(--color-primary-dark);
   }
   .text-white {
     color: var(--color-white);
