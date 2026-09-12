@@ -183,8 +183,17 @@
   .z-10 {
     z-index: 10;
   }
+  .col-auto {
+    grid-column: auto;
+  }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .col-span-2 {
     grid-column: span 2 / span 2;
+  }
+  .row-span-1 {
+    grid-row: span 1 / span 1;
   }
   .row-span-2 {
     grid-row: span 2 / span 2;
@@ -200,6 +209,9 @@
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
   }
   .mt-36 {
     margin-top: calc(var(--spacing) * 36);
@@ -261,14 +273,23 @@
   .grid-flow-col {
     grid-auto-flow: column;
   }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
   .grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+  .place-content-center {
+    place-content: center;
   }
   .items-center {
     align-items: center;
@@ -348,6 +369,9 @@
   .text-center {
     text-align: center;
   }
+  .font-PlayfairDisplay {
+    font-family: var(--font-PlayfairDisplay);
+  }
   .font-montserrat {
     font-family: var(--font-montserrat);
   }
@@ -357,6 +381,9 @@
   }
   .text-\[12px\] {
     font-size: 12px;
+  }
+  .text-\[32px\] {
+    font-size: 32px;
   }
   .leading-\[16\.8px\] {
     --tw-leading: 16.8px;
