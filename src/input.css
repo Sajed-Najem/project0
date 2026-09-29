@@ -76,6 +76,21 @@
     padding-right: 20px;
   }
 
+
+  .card {
+    @apply bg-white rounded-lg p-4 transition-transform duration-200 hover:-translate-y-1 hover:shadow-xl ;
+  }
+
+  .product-card-title {
+    @apply font-PlayfairDisplay text-xl font-medium tracking-tight text-primary-dark;
+  }
+  .badge-bestseller {
+    @apply absolute top-3 left-3 rounded-xs bg-[#FFB77B] px-2.5 py-1 text-[10px] font-normal font-montserrat tracking-wider text-neutral-800 uppercase;
+  }
+  .product-card-price {
+    @apply text-xl font-bold text-[#C27829];
+  }
+
   @media (min-width: 768px) {
     .my-container {
       padding-left: 32px;
