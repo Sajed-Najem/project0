@@ -91,6 +91,21 @@
     @apply text-xl font-bold text-[#C27829];
   }
 
+  .tag-primary {
+    @apply rounded bg-[#FFD1B3] px-2 py-0.5 text-[10px] font-bold tracking-wide text-[#7A5840] uppercase;
+  }
+
+  .tag-secondary {
+@apply  bg-[#E5E2E1] px-2 py-0.5 text-[10px] font-bold tracking-wide text-[#4F453F] uppercase;
+
+}
+
+.product-card-details {
+    @apply font-montserrat text-[12px] font-semibold tracking-[1.2px] text-[#4F453F] w-[227.33999633789062px];
+  }
+
+
+
   @media (min-width: 768px) {
     .my-container {
       padding-left: 32px;
