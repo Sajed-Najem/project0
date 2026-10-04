@@ -101,9 +101,12 @@
 }
 
 .product-card-details {
-    @apply font-montserrat text-[12px] font-semibold tracking-[1.2px] text-[#4F453F] w-[227.33999633789062px];
+    @apply font-montserrat text-[12px] font-semibold tracking-[1.2px] leading-relaxed text-[#4F453F] w-[227.33999633789062px];
   }
 
+  .product-price {
+    @apply text-[18px] font-bold text-[#B87333];
+  }
 
 
   @media (min-width: 768px) {
