@@ -13,6 +13,8 @@
     --spacing: 0.25rem;
     --container-xs: 20rem;
     --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-4xl: 56rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-5xl: 3rem;
@@ -262,8 +264,17 @@
   .min-h-137\.5 {
     min-height: calc(var(--spacing) * 137.5);
   }
+  .w-2xl {
+    width: var(--container-2xl);
+  }
+  .w-4xl {
+    width: var(--container-4xl);
+  }
   .w-\[237\.02999877929688px\] {
     width: 237.02999877929688px;
+  }
+  .w-\[669\.5px\] {
+    width: 669.5px;
   }
   .w-full {
     width: 100%;
@@ -294,6 +305,9 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .place-content-center {
+    place-content: center;
   }
   .items-center {
     align-items: center;
@@ -425,6 +439,9 @@
   .text-\[12px\] {
     font-size: 12px;
   }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
   .text-\[32px\] {
     font-size: 32px;
   }
@@ -432,9 +449,17 @@
     --tw-leading: 16.8px;
     line-height: 16.8px;
   }
+  .leading-\[28\.8px\] {
+    --tw-leading: 28.8px;
+    line-height: 28.8px;
+  }
   .leading-\[57\.6px\] {
     --tw-leading: 57.6px;
     line-height: 57.6px;
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -447,6 +472,9 @@
   .tracking-\[2\.4px\] {
     --tw-tracking: 2.4px;
     letter-spacing: 2.4px;
+  }
+  .text-\[\#4F453F\] {
+    color: #4F453F;
   }
   .text-\[\#B87333\] {
     color: #B87333;
