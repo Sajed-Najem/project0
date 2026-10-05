@@ -108,6 +108,11 @@
     @apply text-[18px] font-bold text-[#B87333];
   }
 
+  .mobile-card{
+    @apply  bg-white p-4 transition-transform duration-200 hover:-translate-y-1 hover:shadow-xl ;
+  }
+}
+
 
   @media (min-width: 768px) {
     .my-container {
@@ -132,4 +137,3 @@
 
     
 
-}

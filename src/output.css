@@ -223,9 +223,6 @@
   .mt-0 {
     margin-top: 0px;
   }
-  .mt-0\.5 {
-    margin-top: calc(var(--spacing) * 0.5);
-  }
   .mt-0\.75 {
     margin-top: calc(var(--spacing) * 0.75);
   }
@@ -307,6 +304,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-1 {
     gap: var(--spacing);
   }
@@ -348,6 +348,9 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .object-fill {
+    object-fit: fill;
   }
   .object-center {
     object-position: center;
@@ -655,18 +658,39 @@
     font-weight: var(--font-weight-bold);
     color: #B87333;
   }
-  @media (min-width: 768px) {
-    .my-container {
-      padding-left: 32px;
-      padding-right: 32px;
+  .mobile-card {
+    background-color: var(--color-white);
+    padding: calc(var(--spacing) * 4);
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * -1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
     }
   }
-  @media (min-width: 1120px) {
-    .my-container {
-      padding-left: 64px;
-      padding-right: 64px;
-      gap: 30px;
-    }
+}
+@media (min-width: 768px) {
+  .my-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (min-width: 1120px) {
+  .my-container {
+    padding-left: 64px;
+    padding-right: 64px;
+    gap: 30px;
   }
 }
 @property --tw-rotate-x {
