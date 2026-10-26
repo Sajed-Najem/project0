@@ -834,6 +834,10 @@
   .text-\[32px\] {
     font-size: 32px;
   }
+  .leading-3\.75 {
+    --tw-leading: calc(var(--spacing) * 3.75);
+    line-height: calc(var(--spacing) * 3.75);
+  }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
     line-height: calc(var(--spacing) * 5);
@@ -906,6 +910,10 @@
     --tw-tracking: 1.6px;
     letter-spacing: 1.6px;
   }
+  .tracking-\[1px\] {
+    --tw-tracking: 1px;
+    letter-spacing: 1px;
+  }
   .tracking-\[2\.4px\] {
     --tw-tracking: 2.4px;
     letter-spacing: 2.4px;
@@ -939,6 +947,9 @@
   }
   .text-\[\#AC9181\] {
     color: #AC9181;
+  }
+  .text-\[\#AC918199\] {
+    color: #AC918199;
   }
   .text-\[\#B87333\] {
     color: #B87333;
