@@ -246,6 +246,9 @@
   .row-span-3 {
     grid-row: span 3 / span 3;
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -257,6 +260,15 @@
   }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
+  }
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
+  }
+  .my-9 {
+    margin-block: calc(var(--spacing) * 9);
+  }
+  .my-9\.25 {
+    margin-block: calc(var(--spacing) * 9.25);
   }
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
@@ -296,6 +308,9 @@
   }
   .mr-80 {
     margin-right: calc(var(--spacing) * 80);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
   }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
@@ -357,6 +372,9 @@
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -372,11 +390,17 @@
   .h-112\.5 {
     height: calc(var(--spacing) * 112.5);
   }
+  .h-\[1px\] {
+    height: 1px;
+  }
   .h-auto {
     height: auto;
   }
   .h-full {
     height: 100%;
+  }
+  .h-px {
+    height: 1px;
   }
   .min-h-137 {
     min-height: calc(var(--spacing) * 137);
@@ -387,17 +411,32 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-7xl {
+    width: var(--container-7xl);
+  }
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
+  .w-87 {
+    width: calc(var(--spacing) * 87);
+  }
+  .w-87\.5 {
+    width: calc(var(--spacing) * 87.5);
+  }
   .w-90 {
     width: calc(var(--spacing) * 90);
   }
   .w-\[237\.02999877929688px\] {
     width: 237.02999877929688px;
+  }
+  .w-\[500px\] {
+    width: 500px;
   }
   .w-full {
     width: 100%;
@@ -423,8 +462,14 @@
   .max-w-134 {
     max-width: calc(var(--spacing) * 134);
   }
+  .max-w-\[337\.55999755859375px\] {
+    max-width: 337.55999755859375px;
+  }
   .max-w-\[384px\] {
     max-width: 384px;
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .max-w-xl {
     max-width: var(--container-xl);
@@ -498,6 +543,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
@@ -544,8 +592,14 @@
   .border-\[\#3A2A21\] {
     border-color: #3A2A21;
   }
+  .border-\[\#FFFF\] {
+    border-color: #FFFF;
+  }
   .border-white {
     border-color: var(--color-white);
+  }
+  .bg-\[\#3A2A21\] {
+    background-color: #3A2A21;
   }
   .bg-\[\#6B4F3B\] {
     background-color: #6B4F3B;
@@ -555,6 +609,9 @@
   }
   .bg-\[\#F9F6F0\] {
     background-color: #F9F6F0;
+  }
+  .bg-\[\#FFFF\] {
+    background-color: #FFFF;
   }
   .bg-primary-dark {
     background-color: var(--color-primary-dark);
@@ -672,6 +729,9 @@
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
+  }
   .pr-32 {
     padding-right: calc(var(--spacing) * 32);
   }
@@ -702,11 +762,20 @@
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
   }
+  .pb-\[7\.5px\] {
+    padding-bottom: 7.5px;
+  }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .align-middle {
+    vertical-align: middle;
   }
   .font-PlayfairDisplay {
     font-family: var(--font-PlayfairDisplay);
@@ -759,6 +828,9 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-\[32px\] {
     font-size: 32px;
   }
@@ -769,6 +841,10 @@
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
+  }
+  .leading-7 {
+    --tw-leading: calc(var(--spacing) * 7);
+    line-height: calc(var(--spacing) * 7);
   }
   .leading-8 {
     --tw-leading: calc(var(--spacing) * 8);
@@ -858,11 +934,20 @@
   .text-\[\#A89A8E\] {
     color: #A89A8E;
   }
+  .text-\[\#AC9181CC\] {
+    color: #AC9181CC;
+  }
+  .text-\[\#AC9181\] {
+    color: #AC9181;
+  }
   .text-\[\#B87333\] {
     color: #B87333;
   }
   .text-\[\#D4C5B9\] {
     color: #D4C5B9;
+  }
+  .text-\[\#EABDA0\] {
+    color: #EABDA0;
   }
   .text-\[\#F9F6F0\] {
     color: #F9F6F0;
@@ -909,8 +994,14 @@
   .underline {
     text-decoration-line: underline;
   }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
+  }
   .underline-offset-8 {
     text-underline-offset: 8px;
+  }
+  .opacity-40 {
+    opacity: 40%;
   }
   .opacity-60 {
     opacity: 60%;
